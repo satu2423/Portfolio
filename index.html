@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karangula Sathwik — Data Scientist & Analyst</title>
+  <meta name="description" content="Karangula Sathwik — Data Scientist and Analyst specializing in Machine Learning, Computer Vision, and Power BI dashboards. B.Tech Computer Science student at Pallavi Engineering College." />
+  <meta name="author" content="Karangula Sathwik" />
+
+  <!-- Pre-render theme setup to prevent styling flash -->
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem("ks.theme") || "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/index.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="topnav">
+    <div class="wrap topnav-row">
+      <a href="#top" class="brand" id="nav-brand">
+        <span class="dot" id="pulse-dot"></span>
+        <span class="brand-name">KS</span>
+      </a>
+      <nav class="nav-links" id="main-nav" aria-label="Primary Navigation">
+        <!-- Dynamically generated nav links -->
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero wrap" id="top">
+      <div class="hero-bg-canvas" aria-hidden="true">
+        <canvas id="neural-canvas"></canvas>
+      </div>
+      <div class="hero-status" id="hero-status-row">
+        <!-- Dynamically generated pills -->
+      </div>
+      <div class="hero-grid">
+        <div class="hero-textcol">
+          <h1 id="hero-title">
+            <!-- Dynamic headline -->
+          </h1>
+          <p class="hero-tag" id="hero-description">
+            <!-- Dynamic description -->
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#playground">
+              Explore Playground <span class="arr">→</span>
+            </a>
+            <a class="btn" href="#projects">
+              View Projects <span class="arr">→</span>
+            </a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" id="hero-card-widget">
+          <!-- Monogram avatar card -->
+        </aside>
+      </div>
+    </section>
+
+    <!-- Philosophy/Practice Section -->
+    <section class="philosophy wrap">
+      <div class="sec-label">Practice</div>
+      <div class="philosophy-grid">
+        <div class="phil-content">
+          <span class="kicker-label" id="phil-kicker"></span>
+          <p id="phil-body" class="reveal"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infinite Scrolling Tag Ticker -->
+    <div class="ticker-wrapper" aria-hidden="true">
+      <div class="ticker-row" id="skills-ticker">
+        <!-- Dynamic duplicates for seamless scrolling -->
+      </div>
+    </div>
+
+    <!-- Tech Stack Layer Visualizer Section -->
+    <section class="stack-section wrap" id="stack">
+      <div class="sec-label">Architecture</div>
+      <h2 class="section-title reveal">Structured <span class="serif">Layer Stack</span></h2>
+      <p class="section-subtitle reveal">A mapped architecture of my core competencies, from mathematical and statistical foundations to cloud-deployed generative intelligence.</p>
+      
+      <div class="stack-layers-container reveal" id="stack-layers">
+        <!-- Dynamically generated levels -->
+      </div>
+    </section>
+
+    <!-- Interactive Data Science Playground Section -->
+    <section class="playground-section wrap" id="playground">
+      <div class="sec-label">Simulation</div>
+      <h2 class="section-title reveal">Interactive <span class="serif">Data Playground</span></h2>
+      <p class="section-subtitle reveal">Interact with these mock pipelines to see data science in action. Modify values on the left to recalculate and redraw visualizations on the right.</p>
+
+      <div class="play-tabs reveal">
+        <button class="tab-btn active" data-play="forecaster">Regression Forecast</button>
+        <button class="tab-btn" data-play="cv">CV Edge Annotation</button>
+      </div>
+
+      <div class="playground-box reveal">
+        <!-- Dashboard simulator row -->
+        <div class="play-grid" id="play-container">
+          <!-- Dynamically swapped content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects-section wrap" id="projects">
+      <div class="sec-label">Showcase</div>
+      <h2 class="section-title reveal">Featured <span class="serif">Projects</span></h2>
+      
+      <div class="featured-list" id="featured-projects">
+        <!-- Dynamic featured project panels -->
+      </div>
+
+      <!-- Other Projects Grid -->
+      <h3 class="subsection-title reveal">Other Inventions</h3>
+      <div class="projects-grid" id="other-projects">
+        <!-- Dynamic grid of standard projects -->
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section wrap" id="skills">
+      <div class="sec-label">Competencies</div>
+      <h2 class="section-title reveal">Core <span class="serif">Capabilities</span></h2>
+      
+      <div class="skills-grid" id="skills-categories">
+        <!-- Dynamic skills grid -->
+      </div>
+    </section>
+
+    <!-- Work Experience & Education Section -->
+    <section class="experience-section wrap" id="experience">
+      <div class="sec-label">Timeline</div>
+      <div class="exp-edu-grid">
+        <!-- Left column: Work Experience -->
+        <div class="exp-col">
+          <h2 class="timeline-title reveal">Work <span class="serif">History</span></h2>
+          <div class="timeline" id="work-timeline">
+            <!-- Dynamic experiences -->
+          </div>
+        </div>
+        
+        <!-- Right column: Education -->
+        <div class="edu-col">
+          <h2 class="timeline-title reveal">Academic <span class="serif">Path</span></h2>
+          <div class="timeline" id="education-timeline">
+            <!-- Dynamic education -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certs-section wrap" id="certificates">
+      <div class="sec-label">Credentials</div>
+      <h2 class="section-title reveal">Certifications & <span class="serif">Training</span></h2>
+      <div class="certs-grid" id="certs-container">
+        <!-- Dynamic certifications list -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section wrap" id="contact">
+      <div class="sec-label">Engagement</div>
+      <h2 class="section-title reveal">Get in <span class="serif">Touch</span></h2>
+      <p class="section-subtitle reveal">Have a problem to solve, a model to build, or an internship opportunity? Reach out via the form below or directly through email and LinkedIn.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <h4>DIRECT CHANNELS</h4>
+            <div class="info-row">
+              <span class="label">Email</span>
+              <span class="val"><a id="email-link" href=""></a></span>
+            </div>
+            <div class="info-row">
+              <span class="label">LinkedIn</span>
+              <span class="val"><a id="linkedin-link" target="_blank" href=""></a></span>
+            </div>
+            <div class="info-row">
+              <span class="label">Base</span>
+              <span class="val" id="location-val"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container reveal">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Jane Doe" class="twk-field" />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" required placeholder="jane@example.com" class="twk-field" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" required placeholder="Project Inquiries" class="twk-field" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" required rows="5" placeholder="Let's build something meaningful..." class="twk-field"></textarea>
+            </div>
+            <button type="submit" class="btn primary">
+              Send Message <span class="arr">→</span>
+            </button>
+            <div class="form-status" id="form-status-msg" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <div class="foot-left">
+        <span class="mono">© <span id="current-year"></span> Karangula Sathwik.</span>
+      </div>
+      <div class="foot-right">
+        <span class="mono">Built with HTML/CSS/JS · Rendered in <span id="footer-theme-display">Dark</span> Mode</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
