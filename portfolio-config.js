@@ -27,7 +27,7 @@ const portfolioData = {
   ],
 
   HERO: {
-    photo: "/profile.jpg",
+    photo: "./profile.jpg",
     pills: [
       { label: "Available for internships", dot: "grn" },
       { label: "Hyderabad, India · UTC+5:30", dot: null },
@@ -113,7 +113,7 @@ def preprocess_image(image_path):
     {
       id: "hyd-flood-safety",
       title: "Hyderabad Flood Safety Intelligence App",
-      image: "/hyderabad-flood.png",
+      image: "./hyderabad-flood.png",
       aspectRatio: "1024 / 495",
       tech: "Keras · Python · Flask · Leaflet.js",
       tagline: "Real-time flood vulnerability deep learning assessment",
@@ -128,7 +128,7 @@ def preprocess_image(image_path):
     {
       id: "celestia-health",
       title: "Celestia Health App",
-      image: "/celestia-health.png",
+      image: "./celestia-health.png",
       aspectRatio: "1024 / 491",
       tech: "Three.js · Python · OpenCV · AI APIs",
       tagline: "3D Self-Diagnosis & AI-powered Pill Identification",
@@ -142,7 +142,7 @@ def preprocess_image(image_path):
     {
       id: "cv-handwriting",
       title: "Handwriting Recognition System",
-      image: "/handwriting-analyzer.png",
+      image: "./handwriting-analyzer.png",
       aspectRatio: "1024 / 482",
       tech: "Python · OpenCV · Scikit-learn · CNN",
       tagline: "Computer Vision Pipeline with 89% accuracy",
@@ -157,7 +157,7 @@ def preprocess_image(image_path):
     {
       id: "bi-sales-dashboard",
       title: "Sales Performance Dashboard",
-      image: "/sales-dashboard.png",
+      image: "./sales-dashboard.png",
       aspectRatio: "1024 / 572",
       tech: "Power BI · Excel · Python (Pandas)",
       tagline: "6-Page Interactive Executive Dashboard",
